@@ -1,0 +1,40 @@
+/* Estilos Generales */
+
+body {
+    font-family: 'Courier Prime', monospace;
+}
+  
+/* Navbar */
+  
+.links-nav {
+    color: white;
+}
+  
+.links-nav:hover {
+    color: #dedddd;
+}
+  
+.links-nav:focus {
+    color: #dedddd;
+}
+  
+.navbar {
+    /*background-color: #000000eb;*/
+}
+  
+.glowing-link {
+    text-shadow: 0 0 5px #baacac, 0 0 10px #fff, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000, 0 0 35px #000000;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 16px;
+}
