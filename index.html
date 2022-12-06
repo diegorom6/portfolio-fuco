@@ -73,12 +73,29 @@
         </div>
     </nav>
 
-    <!-- Video -->
-    <div class="full-screen-video-container" style="background-color: #0009;">
-        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;"
-            preload="auto">
-            <source src="videos/aftermovie.mp4" type="video/mp4">
-        </video>
+    <!-- Slider -->
+    <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="height: 100vh;">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="images/test1.JPG" class="d-block w-100 h-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/test2.JPG" class="d-block w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/test3.JPG" class="d-block w-100">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <!-- Sección Destacadas -->
@@ -87,61 +104,51 @@
 
             <h1 style="color: white; text-align: center; margin-bottom: 64px;">Nuestros servicios</h1>
 
-            <div class="row fotos-container" style="position: relative;">
-                <div class="col-lg-4 col-md-6" style="margin-bottom: 30px">
+            <div class="row fotos-container" style="position: relative; justify-content: space-around;">
+                <div class="col-lg-5 col-md-6"
+                    style="margin-bottom: 30px; display: flex; flex-direction: column; align-items: center;">
                     <div class="wrap caja-hover"
                         style="transition: 0.3s; position: relative; overflow: hidden; z-index: 1; background: rgba(0, 0, 0, 0.6);">
                         <span class="hoverable-text" style="display: none; width: 20rem;">Texto de prueba - Texto de
                             prueba</span>
                         <img src="images/test1.JPG" style="max-width: 100%; width: 100%; height: auto;">
                     </div>
+                    <span style="color: white; margin-top: 42px;">Fotografía de producto</span>
                 </div>
 
-                <div class="col-lg-4 col-md-6" style="margin-bottom: 30px">
+                <div class="col-lg-5 col-md-6"
+                    style="margin-bottom: 30px; display: flex; flex-direction: column; align-items: center;">
                     <div class="wrap caja-hover"
                         style="transition: 0.3s; position: relative; overflow: hidden; z-index: 1; background: rgba(0, 0, 0, 0.6);">
                         <span class="hoverable-text" style="display: none; width: 20rem;">Texto de prueba - Texto de
                             prueba</span>
                         <img src="images/test2.JPG" style="max-width: 100%; width: 100%; height: auto;">
                     </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" style="margin-bottom: 30px">
-                    <div class="wrap caja-hover"
-                        style="transition: 0.3s; position: relative; overflow: hidden; z-index: 1; background: rgba(0, 0, 0, 0.6);">
-                        <span class="hoverable-text" style="display: none; width: 20rem;">Texto de prueba - Texto de
-                            prueba</span>
-                        <img src="images/test3.JPG" style="max-width: 100%; width: 100%; height: auto;">
-                    </div>
+                    <span style="color: white; margin-top: 42px;">Fotografía publicitaria</span>
                 </div>
             </div>
 
-            <div class="row fotos-container" style="position: relative;">
-                <div class="col-lg-4 col-md-6" style="margin-bottom: 30px">
+            <div class="row fotos-container" style="position: relative; justify-content: space-around;">
+                <div class="col-lg-5 col-md-6"
+                    style="margin-bottom: 30px; display: flex; flex-direction: column; align-items: center;">
                     <div class="wrap caja-hover"
                         style="transition: 0.3s; position: relative; overflow: hidden; z-index: 1; background: rgba(0, 0, 0, 0.6);">
                         <span class="hoverable-text" style="display: none; width: 20rem;">Texto de prueba - Texto de
                             prueba</span>
-                        <img src="images/test4.JPG" style="max-width: 100%; width: 100%; height: auto;">
+                        <img src="images/test1.JPG" style="max-width: 100%; width: 100%; height: auto;">
                     </div>
+                    <span style="color: white; margin-top: 42px;">Fotografía corporativa</span>
                 </div>
 
-                <div class="col-lg-4 col-md-6" style="margin-bottom: 30px">
+                <div class="col-lg-5 col-md-6"
+                    style="margin-bottom: 30px; display: flex; flex-direction: column; align-items: center;">
                     <div class="wrap caja-hover"
                         style="transition: 0.3s; position: relative; overflow: hidden; z-index: 1; background: rgba(0, 0, 0, 0.6);">
                         <span class="hoverable-text" style="display: none; width: 20rem;">Texto de prueba - Texto de
                             prueba</span>
-                        <img src="images/test5.JPG" style="max-width: 100%; width: 100%; height: auto;">
+                        <img src="images/test2.JPG" style="max-width: 100%; width: 100%; height: auto;">
                     </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" style="margin-bottom: 30px">
-                    <div class="wrap caja-hover"
-                        style="transition: 0.3s; position: relative; overflow: hidden; z-index: 1; background: rgba(0, 0, 0, 0.6);">
-                        <span class="hoverable-text" style="display: none; width: 20rem;">Texto de prueba - Texto de
-                            prueba</span>
-                        <img src="images/test6.JPG" style="max-width: 100%; width: 100%; height: auto;">
-                    </div>
+                    <span style="color: white; margin-top: 42px;">Fotografía de turismo</span>
                 </div>
             </div>
         </div>
@@ -162,4 +169,5 @@
     </div>
 
 </body>
+
 </html>
