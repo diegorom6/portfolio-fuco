@@ -187,17 +187,21 @@ input[type=checkbox] {
     margin: 24px;
 }
 
+.container-proyecto {
+    margin-bottom: 4rem;
+}
+
 .container-proyecto p {
     text-align: center;
     font-weight: 400;
     font-size: 26px;
+    margin-top: 16px;
 }
 
 .slide {
     display: flex;
-    justify-content: flex-start;
-    overflow-x: scroll;
     gap: 32px;
+    justify-content: center;
 }
 
 .slide img {
@@ -208,4 +212,28 @@ input[type=checkbox] {
 .slide video {
     width: 400px;
     height: 600px;
+}
+
+@media (max-width: 1242px) {
+    .slide {
+        margin: 0 1.8rem;
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
+}
+
+/* Section Nosotros */
+
+.nosotros {
+    background-color: #e9e2d9;
+    height: calc(100vh - 120px);
+}
+
+.nosotros h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 24px;
 }
