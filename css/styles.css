@@ -225,8 +225,11 @@ input[type=checkbox] {
 /* Section Nosotros */
 
 .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-color: #e9e2d9;
-    height: calc(100vh - 120px);
+    padding: 2rem;
 }
 
 .nosotros h1 {
@@ -235,5 +238,50 @@ input[type=checkbox] {
     font-size: 40px;
     text-transform: uppercase;
     text-align: center;
-    margin: 24px;
+}
+
+.container-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.container-nosotros p {
+    text-align: justify;
+}
+
+.container-nosotros img {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0rem;
+}
+
+@media (min-width: 768px) {
+    .container-nosotros {
+        margin-top: 2rem;
+        flex-direction: row-reverse;
+    }
+
+    .container-nosotros p {
+        font-size: calc(14px + 0.50vw);
+    }
+
+    .container-nosotros img {
+        width: 45%;
+        height: auto;
+        margin: 0rem 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-nosotros p {
+        font-size: calc(22px + 0.1vw);
+    }
+
+    .container-nosotros img {
+        width: 40%;
+        height: auto;
+        margin: 0rem 2rem;
+    }
 }
