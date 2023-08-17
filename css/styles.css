@@ -210,7 +210,7 @@ input[type=checkbox] {
 }
 
 .slide video {
-    width: 400px;
+    width: 338px;
     height: 600px;
 }
 
@@ -317,5 +317,45 @@ input[type=checkbox] {
         padding: 3rem;
         margin-top: 3rem;
         margin-bottom: 4rem;
+    }
+}
+
+/* Footer */
+
+.footer {
+    height: 240px;
+    background-color: #142537;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer img {
+    width: 160px;
+    height: auto;
+}
+
+.footer .icons div {
+    display: flex;
+    gap: 32px;
+}
+
+.footer .icons i {
+    color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 14px;
+    font-size: 38px;
+}
+
+@media (max-width: 618px) {
+    .footer {
+        height: 340px;
+        flex-direction: column-reverse;
+    }
+
+    .footer img {
+        width: 140px;
     }
 }

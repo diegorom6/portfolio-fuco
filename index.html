@@ -18,6 +18,8 @@
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/fd4f5ea601.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -133,7 +135,34 @@
                 <p>Cápsulas en tiempo real, reels, video recap.</p>
             </div>
         </div>
-
     </section>
+
+    <!-- Section Footer -->
+    <footer class="footer">
+
+        <div class="icons">
+            <div>
+                <i class="fa-brands fa-instagram fa-circle"></i>
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-solid fa-phone"></i>
+            </div>      
+        </div>
+        
+        <img src="img/big-logo.png" alt="Logo Footer">
+    </footer>
+
+    <script>
+        window.onload = function() {
+            const containers = document.querySelectorAll('.slide');
+
+            containers.forEach(container => {
+                const containerWidth = container.offsetWidth;
+                const contentWidth = container.scrollWidth;
+                const scrollToCenter = (contentWidth - containerWidth) / 2;
+
+                container.scrollLeft = scrollToCenter;
+            });
+        };
+    </script>
 </body>
 </html>
