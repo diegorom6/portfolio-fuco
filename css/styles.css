@@ -28,7 +28,7 @@ ul {
     z-index: 100;
     width: 100%;
     padding: 0rem 6rem;
-    height: 120px;
+    height: 80px;
     top: 0;
     background-color: #142537;
 }
@@ -40,7 +40,7 @@ ul {
 }
 
 .logo {
-    width: 12rem;
+    width: 8rem;
     margin-top: 6px;
 }
 
@@ -145,12 +145,13 @@ input[type=checkbox] {
 
 .full-screen-video-container {
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 80px);
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 80px;
 }
 
 .full-screen-video-container video {
@@ -345,8 +346,12 @@ input[type=checkbox] {
     color: #ffffff;
     border: 2px solid #ccc;
     border-radius: 50%;
-    padding: 14px;
+    padding: 12px;
     font-size: 38px;
+}
+
+.footer .icons i:last-child {
+    font-size: 35px;
 }
 
 @media (max-width: 618px) {
@@ -358,4 +363,86 @@ input[type=checkbox] {
     .footer img {
         width: 140px;
     }
+}
+
+@media (max-width: 938px) {
+    .footer {
+        height: 20rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .footer img {
+        display: none;
+    }
+}
+
+@media (max-width: 478px) {
+
+    .contacto h1 {
+        font-size: 18px !important;
+        text-align: center;
+    }
+
+    .contacto input {
+        width: 15rem !important;
+        font-size: 12px;
+    }
+
+    .contacto button {
+        font-size: 1.1rem !important;
+    }
+
+    .contacto p {
+        font-size: 16px !important;
+    }
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contacto h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.contacto .formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto input {
+    width: 18rem;
+    height: 3.6rem;
+    background-color: #8a929b;
+    border: 1px solid #8a929b;
+    padding: 12px;
+    font-style: italic;
+    color: white;
+    font-size: 14px;
+}
+
+.contacto button {
+    width: 8rem;
+    color: #B89F80;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+
+.contacto input::placeholder {
+    color: white;
+}
+
+.contacto p {
+    color: white;
+    font-size: 22px;
+    text-align: right;
 }
